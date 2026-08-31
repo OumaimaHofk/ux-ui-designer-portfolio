@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexumus — Packaging Design Tool — Oumaima Hofk</title>
+<meta name="description" content="Étude de cas : conception UX/UI de Nexumus, un outil web de conception d'emballages et d'étiquettes.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="tk-nexumus">
+
+<nav class="site-nav">
+  <a href="index.html" class="brand"><span class="dot"></span>Oumaima Hofk</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="etude-cas-wide.html">Wide</a></li>
+    <li><a href="etude-cas-nexumus.html" class="is-active">Nexumus</a></li>
+    <li><a href="mailto:oumaimahofk@gmail.com" class="nav-cta">Me contacter</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <div class="cs-kicker reveal">
+      <span class="eyebrow">Case 02 — Outil web SaaS</span>
+    </div>
+    <h1 class="cs-title reveal" style="transition-delay:.06s;">Nexumus — concevoir un emballage complet sans quitter le navigateur.</h1>
+    <p class="cs-lede reveal" style="transition-delay:.12s;">Design d'un éditeur en ligne permettant à des marques de créer étiquettes, flacons et boîtes à partir de mockups prêts à l'emploi — typographie, couleurs, aperçu 3D et export haute résolution, en un seul flux.</p>
+
+    <div class="cs-meta reveal" style="transition-delay:.18s;">
+      <div><div class="k">Rôle</div><div class="v">UX/UI Designer</div></div>
+      <div><div class="k">Type</div><div class="v">Application web SaaS</div></div>
+      <div><div class="k">Période</div><div class="v">2024 – 2025</div></div>
+      <div><div class="k">Livrables</div><div class="v">UI Kit · Éditeur complet</div></div>
+    </div>
+
+    <div class="cs-cover reveal" style="transition-delay:.24s;">
+      <img src="images/nexumus-02-laptop.png" alt="Éditeur d'étiquette Nexumus affiché sur un MacBook" loading="lazy">
+    </div>
+  </div>
+</header>
+
+<section class="cs-section">
+  <div class="wrap cs-2col">
+    <div class="reveal">
+      <span class="num">Contexte</span>
+      <h2>Le packaging, un métier d'expert peu accessible</h2>
+    </div>
+    <div class="reveal" style="transition-delay:.08s;">
+      <p>Créer un packaging cohérent — étiquette, flacon, boîte — demandait jusque-là plusieurs outils et allers-retours avec un graphiste. L'objectif : réunir bibliothèque de mockups, édition de texte et export dans une seule interface, pensée pour des équipes marketing non-designers.</p>
+      <ul>
+        <li>Cadrage des besoins avec l'équipe produit et les futurs utilisateurs marques</li>
+        <li>Construction d'un kit UI cohérent, réutilisable sur tous les modules de l'éditeur</li>
+        <li>Tests d'interface pour garantir la cohérence du système existant</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" style="padding-top:0;">
+  <div class="wrap cs-2col">
+    <div class="reveal">
+      <span class="num">Approche</span>
+      <h2>Une bibliothèque de composants au centre de l'outil</h2>
+    </div>
+    <div class="reveal" style="transition-delay:.08s;">
+      <p>Le panneau gauche donne accès à une bibliothèque de mockups (flacons, boîtes, tubes) prêts à personnaliser. Le panneau droit rassemble tous les réglages — typographie, couleur, alignement, quantité — pour que l'utilisateur reste toujours au même endroit, quel que soit l'élément édité.</p>
+      <p style="margin-top:14px;">Chaque zone de texte ou de couleur affiche ses valeurs exactes (police, taille, code hex) : un principe de transparence directement inspiré des specs Figma, pour que la marque garde le contrôle fin de son design.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Interface de l'éditeur</h2>
+      <p class="lede">Bibliothèque de templates, outils de sélection et panneau de styles de texte, organisés pour un usage sans friction.</p>
+    </div>
+    <div class="cs-gallery reveal-stagger">
+      <figure class="span-3"><img src="images/nexumus-01-ui-kit.jpg" alt="Vue complète de l'interface de l'éditeur d'emballage avec bibliothèque de templates" loading="lazy"><figcaption>Vue d'ensemble — bibliothèque, outils, styles de texte</figcaption></figure>
+      <figure><img src="images/nexumus-05-label-editor.jpg" alt="Édition de la couleur d'un titre sur une étiquette" loading="lazy"><figcaption>Édition typographique & couleur</figcaption></figure>
+      <figure><img src="images/nexumus-06-serum-3d.jpg" alt="Aperçu 3D d'un flacon de sérum personnalisé" loading="lazy"><figcaption>Aperçu 3D du flacon</figcaption></figure>
+      <figure><img src="images/nexumus-03-bottle-library.jpg" alt="Bibliothèque de flacons internes et externes avec sélecteur de couleur" loading="lazy"><figcaption>Bibliothèque de flacons</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" style="padding-top:0;">
+  <div class="wrap cs-2col">
+    <div class="reveal">
+      <span class="num">Boîtes & découpe</span>
+      <h2>Du gabarit de découpe à l'export final</h2>
+    </div>
+    <div class="reveal" style="transition-delay:.08s;">
+      <p>Pour les boîtes, l'utilisateur choisit une forme dans la bibliothèque puis ajuste texture, matière et couleur directement sur le gabarit de découpe technique — avant de générer un export haute résolution prêt pour l'impression.</p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:36px;">
+    <div class="cs-wide-shot reveal">
+      <img src="images/nexumus-04-die-cut.jpg" alt="Gabarit de découpe technique d'une boîte avec panneau de texture et de matière" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Résultat</h2>
+    </div>
+    <div class="cs-outcome reveal-stagger">
+      <div class="outcome-card"><div class="big">3</div><p>familles de produits couvertes : flacons, étiquettes, boîtes</p></div>
+      <div class="outcome-card"><div class="big">1</div><p>kit UI documenté et maintenu pour l'ensemble de l'éditeur</p></div>
+      <div class="outcome-card"><div class="big">2D/3D</div><p>aperçu en temps réel pour valider le rendu avant export</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="cs-next reveal">
+    <div>
+      <span class="label">Projet suivant</span>
+      <h3>Wide — Real Estate App</h3>
+    </div>
+    <a href="etude-cas-wide.html">
+      <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></span>
+    </a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <p>© 2026 Oumaima Hofk — UX/UI Designer</p>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/oumaima.hofk" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:oumaimahofk@gmail.com">Email</a>
+      <a href="tel:+32498665008">+32 498 66 50 08</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
