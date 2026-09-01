@@ -11,15 +11,22 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<button class="back-to-top" aria-label="Retour en haut">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M6 15L12 9L18 15"/>
+  </svg>
+</button>
+
 <body class="tk-wide">
 
   <nav class="site-nav">
     <a href="index.html" class="brand"><span class="dot"></span>Oumaima Hofk</a>
     <ul class="nav-links">
       <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
       <li class="nav-dropdown">
         <div class="nav-dropdown-row">
-          <a href="projets.html">Projets</a>
+          <a href="projets.html" class="is-active">Projets</a>
 
           <button class="dropdown-toggle" type="button" aria-label="Afficher les projets" aria-expanded="false">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -41,7 +48,7 @@
   <header class="cs-hero">
     <div class="wrap">
       <div class="cs-kicker reveal">
-        <span class="eyebrow">Case 01 — App mobile & dashboard</span>
+        <span class="eyebrow">Projet 01 — App mobile & dashboard</span>
       </div>
       <h1 class="cs-title reveal" style="transition-delay:.06s;">Wide — trouver et réserver un bien immobilier, sans
         friction.</h1>

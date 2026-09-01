@@ -80,3 +80,28 @@ if (dropdownToggle && navDropdown) {
     );
   });
 }
+
+const backToTop = document.querySelector('.back-to-top');
+
+if (backToTop) {
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight;
+    const viewportHeight = window.innerHeight;
+
+    const halfwayPoint = (pageHeight - viewportHeight) / 2;
+
+    if (scrollPosition >= halfwayPoint) {
+      backToTop.classList.add('is-visible');
+    } else {
+      backToTop.classList.remove('is-visible');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}

@@ -10,15 +10,22 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<button class="back-to-top" aria-label="Retour en haut">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M6 15L12 9L18 15"/>
+  </svg>
+</button>
+
 <body>
 
   <nav class="site-nav">
     <a href="index.html" class="brand"><span class="dot"></span>Oumaima Hofk</a>
     <ul class="nav-links">
       <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
       <li class="nav-dropdown">
         <div class="nav-dropdown-row">
-          <a href="projets.html">Projets</a>
+          <a href="projets.html" class="is-active">Projets</a>
 
           <button class="dropdown-toggle" type="button" aria-label="Afficher les projets" aria-expanded="false">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -39,7 +46,7 @@
 
   <header class="page-header">
     <div class="wrap reveal">
-      <span class="eyebrow" style="--proj-accent:#4F46E5;">Index — 02 projets publiés</span>
+      <span class="eyebrow" style="--proj-accent:#4F46E5;">02 projets publiés</span>
       <h1 style="margin-top:16px;">Projets</h1>
       <p class="lede">Applications mobiles, outils web et systèmes de design conçus pour des équipes produit. Chaque
         projet a sa propre palette — comme un token de design system.</p>
