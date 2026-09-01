@@ -63,3 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const navDropdown = document.querySelector('.nav-dropdown');
+
+if (dropdownToggle && navDropdown) {
+  dropdownToggle.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const isOpen = navDropdown.classList.toggle('is-open');
+
+    dropdownToggle.setAttribute(
+      'aria-expanded',
+      isOpen ? 'true' : 'false'
+    );
+  });
+}
