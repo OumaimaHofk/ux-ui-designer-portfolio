@@ -487,9 +487,17 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
   display: flex;
   flex-direction: column;
   align-items: center;
-    text-align: center;
+  text-align: center;
+  justify-content: space-evenly;
 }
-.cs-gallery figure img{ transition:transform .7s var(--ease); }
+
+.neximus-overview {
+  width: 90%;
+  height: 90%;
+}
+.cs-gallery figure img{ 
+  transition:transform .7s var(--ease);
+ }
 .cs-gallery figure:hover img{ transform:scale(1.05); }
 .cs-gallery figcaption{
   font-family:var(--font-mono); font-size:11.5px; color:var(--muted);
