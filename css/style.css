@@ -227,7 +227,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
    HERO (home)
    ========================================================================== */
 .hero{
-  padding:clamp(140px,20vw,190px) var(--gutter) clamp(60px,8vw,90px);
+  padding:clamp(100px,9vw,190px) var(--gutter) clamp(60px,8vw,90px);
   position:relative;
 }
 .hero-grid{
@@ -401,7 +401,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
    PROJETS PAGE — filters
    ========================================================================== */
 .page-header{
-  padding:clamp(130px,16vw,170px) var(--gutter) clamp(30px,5vw,50px);
+  padding:clamp(90px,8vw,170px) var(--gutter) clamp(30px,5vw,50px);
 }
 .page-header h1{ font-size:clamp(34px,6vw,64px); letter-spacing:-0.02em; max-width:16ch; }
 .page-header .lede{ color:var(--ink-soft); font-size:16px; max-width:52ch; margin-top:16px; }
@@ -429,7 +429,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
    CASE STUDY PAGES
    ========================================================================== */
 .cs-hero{
-  padding:clamp(140px,18vw,180px) var(--gutter) clamp(50px,8vw,80px);
+  padding:clamp(100px,9vw,180px) var(--gutter) clamp(50px,8vw,80px);
   background:
     radial-gradient(900px 420px at 85% -10%, var(--proj-soft), transparent 65%);
 }
