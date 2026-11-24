@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <title>
+    TEAMFRAME — Étude de cas UX/UI | Oumaima Hofk
+  </title>
+  <link href="favicon.png" rel="icon" />
+  <meta
+    content="Étude de cas UX/UI TEAMFRAME (TeamFrame) : plateforme de recrutement, espaces administrateur et candidat, Kanban, entretiens et design system."
+    name="description" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="tk-teamframe" style="--proj-accent:#3F60D5; --proj-soft:#EAF0FF;">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">
+      <span class="dot">
+      </span>
+      Oumaima Hofk
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li class="nav-dropdown">
+        <div class="nav-dropdown-row"><a class="is-active" href="projets.html">Projets</a><button
+            aria-controls="projects-dropdown" aria-expanded="false" aria-label="Afficher les projets"
+            class="dropdown-toggle" type="button"><svg fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path d="M9 6L15 12L9 18"></path>
+            </svg></button></div>
+        <ul class="dropdown-menu" id="projects-dropdown">
+          <li><a href="etude-cas-wide.html">Wide</a></li>
+          <li><a href="etude-cas-nexumus.html">Nexumus</a></li>
+          <li><a href="etude-cas-teamframe.html">TeamFrame</a></li>
+        </ul>
+      </li>
+      <li><a class="nav-cta" href="mailto:oumaimahofk@gmail.com">Me contacter</a></li>
+    </ul>
+    <button aria-label="Ouvrir le menu" class="nav-toggle">
+      <span>
+      </span>
+      <span>
+      </span>
+      <span>
+      </span>
+    </button>
+  </nav>
+  <header class="cs-hero">
+    <div class="wrap">
+      <div class="cs-kicker reveal">
+        <span class="eyebrow">
+          Case 03 — TeamFrame · Web app
+        </span>
+      </div>
+      <h1 class="cs-title reveal">
+        TeamFrame — simplifier le recrutement, du premier contact à la signature.
+      </h1>
+      <p class="cs-lede reveal">
+        Une expérience de recrutement à deux visages : un espace RH pour piloter les candidatures et un
+        espace candidat pour suivre chaque étape, avec une interface cohérente du tableau de bord au
+        contrat.
+      </p>
+      <div class="cs-meta reveal">
+        <div>
+          <div class="k">
+            Rôle
+          </div>
+          <div class="v">
+            UX/UI Design
+          </div>
+        </div>
+        <div>
+          <div class="k">
+            Produit
+          </div>
+          <div class="v">
+            Plateforme RH web
+          </div>
+        </div>
+        <div>
+          <div class="k">
+            Personas
+          </div>
+          <div class="v">
+            Administrateur · Candidat
+          </div>
+        </div>
+        <div>
+          <div class="k">
+            Livrables
+          </div>
+          <div class="v">
+            Parcours · UI · Design system
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions reveal">
+        <figure class="cs-cover reveal img-laptop-container teamframe-cover"><img
+            alt="TeamFrame — écran de connexion et aperçu de l’espace RH" class="img-laptop" decoding="async"
+            loading="eager" src="images/0 Log in.png" />
+        </figure>
+
+      </div>
+  </header>
+  <main>
+    <section class="cs-section">
+      <div class="wrap cs-2col">
+        <div class="reveal">
+          <span class="num">
+            Contexte &amp; enjeu
+          </span>
+          <h2>
+            Réunir les étapes d'un recrutement dans un seul espace
+          </h2>
+        </div>
+        <div class="reveal">
+          <p>
+            Le processus de recrutement comporte de nombreuses transitions : publication d'offres, réception de
+            candidatures, présélection, évaluations, entretiens et contractualisation. TeamFrame
+            organise ces actions dans un environnement unique, tout en proposant au candidat une vision claire de
+            l'avancement de son dossier.
+          </p>
+          <ul>
+            <li>
+              Clarifier les priorités des équipes RH sur un tableau de bord lisible
+            </li>
+            <li>
+              Rendre les statuts et les prochaines actions visibles pour chaque profil
+            </li>
+            <li>
+              Harmoniser les composants sur des parcours nombreux et complexes
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="cs-section" style="padding-top:0">
+      <div class="wrap cs-2col">
+        <div class="reveal">
+          <span class="num">
+            Approche UX
+          </span>
+          <h2>
+            Deux rôles, un système commun
+          </h2>
+        </div>
+        <div class="reveal">
+          <p>
+            L'architecture distingue les besoins de l'administrateur et ceux du candidat. L'équipe RH gère
+            les offres, la sélection et les décisions depuis des tableaux et un Kanban. Le candidat
+            consulte les opportunités, postule, reçoit des notifications et répond aux demandes
+            à chaque étape.
+          </p>
+          <p style="margin-top:14px">
+            Le même langage visuel — navigation latérale, cartes, badges d'état, formulaires
+            et notifications — aide à passer d'un module à l'autre sans réapprentissage.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cs-section" style="padding-top:0;">
+      <div class="wrap cs-2col">
+        <div class="reveal">
+          <span class="num">Interface administrateur</span>
+          <h2>Gérer le recrutement en un coup d’œil</h2>
+        </div>
+        <div class="reveal" style="transition-delay:.08s;">
+          <p>De la publication des postes au suivi des candidats, l'information est structurée pour faciliter la
+            décision.</p>
+        </div>
+      </div>
+      <div class="wrap" style="margin-top:36px;">
+        <div class="cs-gallery teamframe-gallery reveal-stagger">
+          <figure class="teamframe-shot span-3"><img
+              alt="TeamFrame — tableau de bord du recruteur avec indicateurs et suivi des équipes" decoding="async"
+              loading="lazy" src="images/1 espace recruteur-dashboard.png" />
+            <figcaption>Tableau de bord RH — vue d’ensemble et indicateurs de pilotage</figcaption>
+          </figure>
+          <figure class="teamframe-shot"><img alt="TeamFrame — gestion des offres d’emploi dans l’espace recruteur"
+              decoding="async" loading="lazy" src="images/3 espace recruteur-job offers.png" />
+            <figcaption>Offres d’emploi — gestion des publications et de leurs statuts</figcaption>
+          </figure>
+          <figure class="teamframe-shot"><img alt="TeamFrame — pipeline Kanban des candidats" decoding="async"
+              loading="lazy" src="images/4 espace recruteur-candidate pipeline.png" />
+            <figcaption>Pipeline Kanban — progression des candidatures</figcaption>
+          </figure>
+          <figure class="teamframe-shot"><img alt="TeamFrame — fiche de profil d’une candidate" decoding="async"
+              loading="lazy" src="images/4 espace recruteur-candidate profile.png" />
+            <figcaption>Profil candidat — expériences et suivi du dossier</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cs-section" style="padding-top:0;">
+      <div class="wrap cs-2col">
+        <div class="reveal">
+          <span class="num">Interface candidat</span>
+          <h2>Une expérience plus transparente pour les candidats</h2>
+        </div>
+        <div class="reveal" style="transition-delay:.08s;">
+          <p>Découvrir les offres pertinentes, consulter les détails, candidater et connaître le
+            statut de sa demande.</p>
+        </div>
+      </div>
+      <div class="wrap" style="margin-top:36px;">
+        <div class="cs-gallery teamframe-gallery teamframe-gallery-two reveal-stagger">
+          <figure class="teamframe-shot"><img alt="TeamFrame — offres d’emploi recommandées dans l’espace candidat"
+              decoding="async" loading="lazy" src="images/3 espace candidat-job offers.png" />
+            <figcaption>Espace candidat — recherche et consultation des offres</figcaption>
+          </figure>
+          <figure class="teamframe-shot"><img alt="TeamFrame — réservation d’un entretien et sélection d’un créneau"
+              decoding="async" loading="lazy" src="images/5 espace candidat-book an interview.png" />
+            <figcaption>Espace candidat — choix d’un créneau pour un entretien</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="cs-section" style="padding-top:0;">
+      <div class="wrap cs-2col">
+        <div class="reveal">
+          <span class="num">Fonctionnalités</span>
+          <h2>Des fonctionnalités connectées à tout le parcours</h2>
+        </div>
+        <div class="reveal" style="transition-delay:.08s;">
+          <p>TeamFrame centralise les fonctionnalités essentielles du recrutement
+            au sein d'une interface intuitive et structurée. De la gestion des offres
+            au suivi des candidatures, chaque outil est conçu pour simplifier
+            les tâches quotidiennes des recruteurs, faciliter la prise de décision
+            et assurer une progression fluide à chaque étape du processus.</p>
+        </div>
+      </div>
+      <div class="wrap" style="margin-top:36px;">
+        <div class="cs-outcome reveal-stagger">
+          <article class="outcome-card">
+            <span class="eyebrow">
+              Recruter
+            </span>
+            <h3>
+              Offres &amp; candidatures
+            </h3>
+            <p>
+              Créer, modifier et publier une offre ; retrouver les profils et leurs documents.
+            </p>
+          </article>
+          <article class="outcome-card">
+            <span class="eyebrow">
+              Organiser
+            </span>
+            <h3>
+              Kanban &amp; statuts
+            </h3>
+            <p>
+              Visualiser la progression des dossiers et identifier les actions prioritaires.
+            </p>
+          </article>
+          <article class="outcome-card">
+            <span class="eyebrow">
+              Évaluer
+            </span>
+            <h3>
+              Évaluation des profils
+            </h3>
+            <p>
+              Consulter les fiches d'évaluation et générer des documents récapitulatifs.
+            </p>
+          </article>
+        </div>
+        <br>
+        <div class="cs-outcome reveal-stagger">
+          <article class="outcome-card">
+            <span class="eyebrow">
+              Échanger
+            </span>
+            <h3>
+              Rendez-vous
+            </h3>
+            <p>
+              Proposer des créneaux, réserver ou annuler un entretien et notifier les parties.
+            </p>
+          </article>
+          <article class="outcome-card">
+            <span class="eyebrow">
+              Décider
+            </span>
+            <h3>
+              Offres contractuelles
+            </h3>
+            <p>
+              Envoyer une proposition, accepter, refuser ou demander une négociation.
+            </p>
+          </article>
+          <article class="outcome-card">
+            <span class="eyebrow">
+              Finaliser
+            </span>
+            <h3>
+              Contrats &amp; documents
+            </h3>
+            <p>
+              Prévisualiser les contrats, gérer leurs versions et récupérer les documents
+              signés.
+            </p>
+          </article>
+        </div>
+        <div class="cs-gallery teamframe-gallery teamframe-gallery-two reveal-stagger">
+          <figure class="teamframe-shot"><img alt="TeamFrame — calendrier du recruteur avec détails d’un entretien"
+              decoding="async" loading="lazy" src="images/2 espace recruteur-mockup calendar.png" />
+            <figcaption>Calendrier RH — gestion des rendez-vous et détails des entretiens</figcaption>
+          </figure>
+          <figure class="teamframe-shot"><img
+              alt="TeamFrame — prévisualisation d’une lettre d’offre et actions de signature" decoding="async"
+              loading="lazy" src="images/4 espace recruteur-offer letter document.png" />
+            <figcaption>Lettre d’offre — aperçu du document et actions associées</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!--<section class="cs-section" style="padding-top:0;">
+      <div class="wrap cs-2col">
+        <div class="reveal">
+          <span class="num">Design system</span>
+          <h2>Une grammaire visuelle réutilisable</h2>
+        </div>
+        <div class="reveal" style="transition-delay:.08s;">
+          <p>Une interface modulaire : navigation stable, composants répétables, hiérarchie
+            typographique et états immédiatement reconnaissables.</p>
+        </div>
+      </div>
+      <div class="wrap" style="margin-top:36px;">
+        <div class="work-grid reveal-stagger">
+          <article class="project-card">
+            <div class="bar">
+            </div>
+            <div class="project-body">
+              <h3>
+                Couleurs &amp; hiérarchie
+              </h3>
+              <p>
+                Palette indicative de la visualisation web ; consulter le fichier Figma pour les tokens exacts.
+              </p>
+              <div class="project-tags">
+                <span>
+                  Primaire
+                </span>
+                <span>
+                  Texte
+                </span>
+                <span>
+                  Surface
+                </span>
+                <span>
+                  Succès
+                </span>
+              </div>
+              <div class="spec-strip">
+                <span class="spec-chip">
+                  <span class="swatch" style="background:#3f60d5">
+                  </span>
+                  <b>
+                    Primaire
+                  </b>
+                </span>
+                <span class="spec-chip">
+                  <span class="swatch" style="background:#1d2a48">
+                  </span>
+                  <b>
+                    Texte
+                  </b>
+                </span>
+                <span class="spec-chip">
+                  <span class="swatch" style="background:#f8f9fd">
+                  </span>
+                  <b>
+                    Surface
+                  </b>
+                </span>
+                <span class="spec-chip">
+                  <span class="swatch" style="background:#e5f6ec">
+                  </span>
+                  <b>
+                    Succès
+                  </b>
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="bar">
+            </div>
+            <div class="project-body">
+              <h3>
+                Composants &amp; états
+              </h3>
+              <p>
+                Boutons, badges, champs, tableaux et cartes pensés pour des usages à haute densité
+                d'informations.
+              </p>
+              <div class="project-tags">
+                <span>
+                  Action principale
+                </span>
+                <span>
+                  En cours
+                </span>
+                <span>
+                  Acceptée
+                </span>
+                <span>
+                  À évaluer
+                </span>
+              </div>
+              <div class="hero-actions">
+                <span class="btn btn-accent">
+                  Action principale
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>-->
+
+    <section class="cs-section" style="padding-top:0;">
+      <div class="wrap cs-2col">
+        <div class="reveal">
+          <span class="num">Résultat design</span>
+          <h2>Un parcours global, une expérience cohérente</h2>
+        </div>
+        <div class="reveal" style="transition-delay:.08s;">
+          <p>Les parcours sont illustrés par des captures des
+            interfaces TeamFrame, de l’espace RH à l’espace candidat. Aucun résultat utilisateur chiffré n’est
+            revendiqué.</p>
+        </div>
+      </div>
+      <div class="wrap" style="margin-top:36px;">
+        <div class="cs-outcome reveal-stagger">
+          <div class="outcome-card">
+            <div class="big">
+              02
+            </div>
+            <p>
+              espaces complémentaires : équipe RH et candidat
+            </p>
+          </div>
+          <div class="outcome-card">
+            <div class="big">
+              06
+            </div>
+            <p>
+              grands ensembles fonctionnels présentés dans l'étude de cas
+            </p>
+          </div>
+          <div class="outcome-card">
+            <div class="big">
+              01
+            </div>
+            <p>
+              langage de composants partagé entre les parcours
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div class="wrap">
+    <div class="cs-next reveal">
+      <div>
+        <span class="label">
+          Découvrir aussi
+        </span>
+        <h3>
+          Wide — Real Estate App
+        </h3>
+      </div>
+      <a aria-label="Voir Wide" href="etude-cas-wide.html">
+        <span class="arrow">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+            <path d="M7 17L17 7M17 7H8M17 7V16">
+            </path>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p>
+        © 2026 Oumaima Hofk — UX/UI Designer
+      </p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/oumaima.hofk" rel="noopener" target="_blank">
+          LinkedIn
+        </a>
+        <a href="mailto:oumaimahofk@gmail.com">
+          Email
+        </a>
+        <a href="tel:+32498665008">
+          +32 498 66 50 08
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js">
+  </script>
+</body>
+
+</html>

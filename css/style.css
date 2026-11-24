@@ -106,6 +106,9 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
   transform:rotate(45deg);
   flex:none;
 }
+.eyebrow.no-diamond::before {
+  display: none;
+}
 .section{ padding-block:clamp(64px,10vw,120px); }
 .section-head{
   display:flex; align-items:flex-end; justify-content:space-between;
@@ -125,6 +128,9 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
 .reveal-stagger.is-visible > *:nth-child(4){ transition-delay:.24s; }
 .reveal-stagger.is-visible > *:nth-child(5){ transition-delay:.31s; }
 .reveal-stagger.is-visible > *:nth-child(6){ transition-delay:.38s; }
+.cs-gallery.teamframe-gallery.teamframe-gallery-two.reveal-stagger {
+  margin-top: 2rem
+}
 
 /* buttons */
 .btn{
@@ -461,7 +467,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
   width: 80% !important;
  }
 
-.cs-section{ padding-block:clamp(56px,8vw,96px); }
+.cs-section{ padding-block:clamp(56px,4vw,96px); }
 .cs-2col{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start; }
 .cs-2col h2{ font-size:clamp(26px,3.6vw,36px); }
 .cs-2col .num{ font-family:var(--font-mono); color:var(--proj-accent); font-size:13px; margin-bottom:14px; display:block; }
@@ -1056,3 +1062,25 @@ a:focus-visible, button:focus-visible, .btn:focus-visible{
   .about-page .learning-list article{ break-inside:avoid; }
 }
 
+
+
+
+/* TEAMFRAME — image arrangement aligned with the Nexumus case study. */
+.tk-teamframe { --proj-accent:#3F60D5; --proj-soft:#EAF0FF; }
+.tk-teamframe .teamframe-cover { position:relative; margin:auto }
+.tk-teamframe .teamframe-cover img { width:80%; max-width:100%; height:auto; object-fit:contain; }
+.tk-teamframe .teamframe-gallery { margin:0; }
+.tk-teamframe .teamframe-gallery figure { margin:0; }
+.tk-teamframe .teamframe-gallery figure img { width:100%; height:auto; object-fit:contain; }
+.tk-teamframe .teamframe-gallery-two { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.tk-teamframe .teamframe-gallery .span-3 { grid-column:span 3; }
+.tk-teamframe .teamframe-gallery .span-3 img { width:100%; }
+.tk-teamframe .teamframe-gallery figcaption { width:100%; }
+@media (max-width:980px) {
+  .tk-teamframe .teamframe-gallery .span-3 { grid-column:span 2; }
+}
+@media (max-width:720px) {
+  .tk-teamframe .teamframe-gallery-two { grid-template-columns:1fr; }
+  .tk-teamframe .teamframe-gallery .span-3 { grid-column:span 1; }
+  .tk-teamframe .teamframe-cover img { width:100%; }
+}
